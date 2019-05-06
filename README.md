@@ -1,6 +1,6 @@
-# Nodes and weights for Gauss-Legendre quadrature
+# Nodes and weights with any precision for Gauss-Legendre quadrature
 
-* gauss-legendre.R<br/>
+* gauss-legendre.R<br />
   returns nodes and weights with arbitrary precision
   for Gauss-Legendre quadrature.
 * example.R<br/>
