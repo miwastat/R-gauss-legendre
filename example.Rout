@@ -1,8 +1,18 @@
+> ### Calsulates nodes and weights of Gauss-Legendre quadrature.
+> ### The nodes and weights are separated by ",\n"
+> ### so that they can be used in other programs (C and R).
+> ###
+> ### For 128-bit quadruple values (with 112-bit fraction part),
+> ###   the precision is about log10(2^113) ~ 34 decimal places.
+> ### So 36-digit constants are printed.
+> ###
+> 
 > library(Rmpfr)
 Loading required package: gmp
 Attaching package: 'gmp'
 The following objects are masked from 'package:base':
     %*%, apply, crossprod, matrix, tcrossprod
+
 C code of R package 'Rmpfr': GMP using 64 bits per limb
 Attaching package: 'Rmpfr'
 The following objects are masked from 'package:stats':
