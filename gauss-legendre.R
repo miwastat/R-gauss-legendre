@@ -57,7 +57,7 @@ newton <- function(x, n, bits=160, eps=mpfr(10, bits)^(-42)) {
   ## eps: precision both for x and P(x, n)
 
   delta <- mpfr(0, bits)
-  for(i in 1:100){
+  for(i in 1:100) {
     p.n <- P(x, n=n, bits=bits)
     f <- p.n$f
     if((abs(delta) < eps) && (abs(f) < eps))
