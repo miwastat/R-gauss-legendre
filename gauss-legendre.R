@@ -73,7 +73,7 @@ newton <- function(x, n, bits=160, eps=mpfr(10, bits)^(-42)) {
       }
     } else {
       if(abs(fdd) < eps || abs(fd) < eps) {
-        delta <- eps  # Perturb if we cannot move.
+        delta <- 0.5*eps  # Perturb if we cannot move.
       } else {
         delta <- -fd/fdd
       }
